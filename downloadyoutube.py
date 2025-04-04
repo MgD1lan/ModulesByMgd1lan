@@ -17,17 +17,17 @@ class YouTubeMod(loader.Module):
 
     strings = {
         "name": "YouTube",
-        "args": "🎞 <b>There's no link</b>",
-        "downloading": "🎞 <b>Downloading...</b>",
-        "not_found": "🎞 <b>Video not found...</b>",
+        "args": "🛑 <b>There's no link</b>",
+        "downloading": "📲 <b>Downloading...</b>",
+        "not_found": "📲 <b>Video not found...</b>",
         "_cmd_doc_yt": "[mp3] <link> - Download video from YouTube",
         "_cls_doc": "Download video from Youtube",
     }
 
     strings_ru = {
-        "args": "🎞 <b>Укажи ссылку на видео</b>",
-        "downloading": "🎞 <b>Скачиваю...</b>",
-        "not_found": "🎞 <b>Видео не найден...</b>",
+        "args": "🛑 <b>Укажи ссылку на видео</b>",
+        "downloading": "📲 <b>Скачиваю...</b>",
+        "not_found": "📲 <b>Видео не найден...</b>",
         "_cmd_doc_yt": "[mp3] <ссылка> - Скачать видео YouTube",
         "_cls_doc": "Скачать YouTube видео",
     }
