@@ -22,7 +22,7 @@ class BrainfuckMod(loader.Module):
         await message.edit(f"<b>Результат:</b>\n<code>{result}</code>")
 
     async def execute_bf(self, code: str, input_data: str = "") -> str:
-        """Выполняет Brainfuck код"""
+        """Исполнитель"""
         code = re.sub(r'[^><+\-.,[\]]', '', code)
         tape = [0] * 30000
         ptr = 0
@@ -32,7 +32,7 @@ class BrainfuckMod(loader.Module):
         loop_stack = []
         loops = {}
 
-        # Предварительная обработка циклов
+
         for i, c in enumerate(code):
             if c == '[':
                 loop_stack.append(i)
@@ -71,7 +71,7 @@ class BrainfuckMod(loader.Module):
 
             code_ptr += 1
 
-            # Защита от бесконечных циклов
+
             if len(output) > 1000:
                 return "Превышен лимит вывода (1000 символов)"
             
